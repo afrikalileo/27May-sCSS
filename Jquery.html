@@ -1,0 +1,43 @@
+Zaanse<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type = "text" name="" id = "firstvalue">
+        <input type = "text" name="" id = "secondvalue">
+
+    </div>
+
+    <button id = "multp" >Carpma </button>
+    <button id = "dvd">Bolme</button> 
+    <button id = "sum">Toplama</button>
+    <button id = "mines">Cikarma</button>
+
+    <h1 id="sonuc"></h1>
+
+    
+</body>
+<script>
+
+    $("multp").click(function(){
+
+        var sayi1 = Number($("#firstvalue").val());        
+        var sayi2 = Number($("#secondvalue").val());
+        var sonuc = sayi1 * sayi2;
+
+        $("#sonuc").html(sonuc)
+
+        document.getElementById("sonuc").innerHTML  = sonuc
+        
+                
+
+
+    })
+
+</script>
+</html>

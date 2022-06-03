@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <input type = "text" name="" id = "firstvalue">
+        <input type = "text" name="" id = "secondvalue">
+        <input type = "text" name="" id = "thirdvalue">
+ 
+    </div>
+
+    <button id = "multp" >average </button>
+    
+    <div><h1 id="sonuc"></h1></div>
+
+    
+</body>
+<script>
+
+    $("#multp").click(function(){
+
+        var sayi1 = Number($("#firstvalue").val());        
+        var sayi2 = Number($("#secondvalue").val());
+        var sayi3 = Number($("#thirdvalue").val())
+        var sonuc = (sayi1 + sayi2 + sayi3)/3;
+
+        $("#sonuc").html(sonuc)
+
+        document.getElementById("sonuc").innerHTML  = sonuc
+        
+                
+
+
+    })
+
+</script>
+</html>
